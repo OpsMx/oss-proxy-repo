@@ -1,9 +1,5 @@
 artifactId: quay.io/opsmxpublic/ubi8-spin-rosco:190f4ac-14
 kubernetes:
-  volumes:
-  - id: spinnaker-cacerts-kustomize
-    type: configMap
-    mountPath: /etc/pki/tls/certs
   podAnnotations:
     prometheus.io/path: /aop-prometheus
     prometheus.io/port: '8008'
