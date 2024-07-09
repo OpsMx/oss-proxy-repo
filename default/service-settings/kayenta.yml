@@ -1,4 +1,4 @@
-artifactId: quay.io/opsmxpublic/ubi8-spin-kayenta:v3.12-opt-addlogs
+artifactId: quay.io/opsmxpublic/ubi8-spin-kayenta:1dc64bf-7
 kubernetes:
   volumes:
   - id: oes-cacerts

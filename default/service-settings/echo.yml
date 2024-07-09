@@ -1,4 +1,4 @@
-artifactId: quay.io/opsmxpublic/ubi8-spin-echo:v3.12-opt
+artifactId: quay.io/opsmxpublic/ubi8-oes-echo:a6143657-20
 kubernetes:
   podAnnotations:
     prometheus.io/path: /aop-prometheus

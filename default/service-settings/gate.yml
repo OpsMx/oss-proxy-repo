@@ -1,4 +1,4 @@
-artifactId: quay.io/opsmxpublic/ubi8-gate:version-1.22.1-moreaddlogs
+artifactId: quay.io/opsmxpublic/ubi8-oes-gate:7eafeaa5-37
 healthEndpoint: /health
 kubernetes:
   podAnnotations:
