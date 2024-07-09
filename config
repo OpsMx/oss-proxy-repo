@@ -218,12 +218,14 @@ deploymentConfigurations:
         enabled: false
         userAttributeMapping: {}
       ldap:
-        enabled: false
+        enabled: true
+        url: ldap://RELEASE_NAME-openldap:389/dc=example,dc=org
+        userDnPattern: cn={0}
       x509:
         enabled: false
       iap:
         enabled: false
-      enabled: false
+      enabled: true
     authz:
       groupMembership:
         service: EXTERNAL
