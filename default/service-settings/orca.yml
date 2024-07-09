@@ -6,14 +6,6 @@ kubernetes:
     prometheus.io/scrape: 'true'
   useExecHealthCheck: true
   customHealthCheckExecCommands: ["wget", "--no-check-certificate", "--spider", "-q", "http://localhost:8083/health"]
-  volumes:
-  - id: oes-cacerts
-    mountPath: /etc/ssl/certs/java
-    type: secret
-    readOnly: true
-  - id: spinnaker-cacerts-golang
-    type: configMap
-    mountPath: /etc/ssl/certs
 env:
   http_proxy: "http://proxy.config.pcp.local:3128"
   https_proxy: "http://proxy.config.pcp.local:3128"
