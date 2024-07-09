@@ -1,12 +1,4 @@
 artifactId: quay.io/opsmxpublic/ubi8-spin-kayenta:1dc64bf-7
-kubernetes:
-  volumes:
-  - id: oes-cacerts
-    type: secret
-    mountPath: /etc/pki/ca-trust/extracted/java
-  - id: spinnaker-cacerts-golang
-    type: configMap
-    mountPath: /etc/ssl/certs
 env:
   http_proxy: "http://proxy.config.pcp.local:3128"
   https_proxy: "http://proxy.config.pcp.local:3128"
